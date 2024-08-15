@@ -1,0 +1,8 @@
+# robots.txt für www.beispielseite.de
+
+# Alle Crawler dürfen die gesamte Website durchsuchen
+User-agent: *
+Disallow:
+
+# Sitemap-Link
+Sitemap: https://nicomann.ch/sitemap.xml

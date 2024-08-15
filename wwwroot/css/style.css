@@ -89,7 +89,7 @@ li {
 
     --col-white: #F7FBFA;
     --col-black: hsl(20, 0%, 20%);
-    --col-black-light: hsl(20, 5%, 50%);
+    --col-black-light: hsl(20, 5%, 30%);
     --col-black-lightlight: hsl(20, 10%, 80%);
 
     --col-accent: #693216;
@@ -99,9 +99,10 @@ li {
 
     /* Color to UI assignments */
     --background-color: var(--col-primary-light);
-    --background-on-color: var(--col-black-lightlight);
+    --background-on-color: var(--col-black-light);
     --surface-color: var(--col-white);
     --surface-on-color: var(--col-black);
+    --surface-on-alt-color: var(--col-black-light);
     --primary-color: var(--col-primary);
     --primary-on-color: var(--col-black);
     --primary-on-alt-color: var(--col-black-light);
@@ -237,12 +238,9 @@ a.card:focus .card-details {
     width: 100%;
 }
 
-.timeline-content-text {
-}
-
 .timeline-content-details {
     font-size: 0.7em;
-    color: var(--primary-on-alt-color);
+    color: var(--surface-on-alt-color);
     width: 100%;
 }
 

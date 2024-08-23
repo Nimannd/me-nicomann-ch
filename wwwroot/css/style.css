@@ -135,6 +135,7 @@ body {
 }
 
 .row {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
 }
@@ -152,7 +153,7 @@ body {
 
 .timeline {
     background-color: var(--col-black);
-    width: 4%;
+    width: 15px;
     height: 100;
 }
 
@@ -160,6 +161,28 @@ body {
     padding: 20px;
     width: 76%;
 }
+
+@media screen and (max-width: 21cm) {
+    .timeline_left {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    .timeline_right {
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    .timeline {
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 100%;
+    }
+}
+
 
 .milestoneline .timeline_left, 
 .milestoneline .timeline_right {
@@ -177,6 +200,7 @@ body {
 
 .avatar {
     width: 300px;
+    max-width: 100%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-width: 8px;

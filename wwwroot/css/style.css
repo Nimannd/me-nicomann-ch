@@ -132,12 +132,16 @@ body {
     background-color: var(--primary-color);
     color: var(--primary-on-color);
         box-shadow: 0 0 15px var(--shadow);
+
+
+    width: 100%;
 }
 
 .row {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .timeline_left {
@@ -291,6 +295,8 @@ a.card:focus .card-details {
     align-content: center;
     justify-content: right;
     background-color: var(--primarydark-color);
+
+    width: 100%;
 }
 
 .social-profile {
